@@ -1,0 +1,25 @@
+.irArriba {
+    position: fixed;
+    bottom: 50px;
+    right: 3%;
+	cursor: pointer;
+	
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	z-index: 1;
+}
+
+.fadeOut {
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+.fadeIn {
+  opacity: 1;
+  transition: opacity 0.5s;
+}
+
+[data-lang] {
+  display: none;
+}

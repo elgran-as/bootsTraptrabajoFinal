@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="author" content="Ariel Salvia">
+  <meta name="description" content="Portfolio de Professional Frontend Developer">
+  <meta name="keywords" content="HMTL, CSS, Javascript, Bootstrap">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="icon" type="image/x-icon" href="./assets/iconos/logo.svg">
+  <title>PortFolio Ariel Salvia</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-md bg-dark border-bottom border-body border-success container-fluid"
+    data-bs-theme="dark">
+    <div class="container-fluid">
+      <a class="row navbar-brand" href="#">
+        <img class="btn btn-outline-success m-2" src="./assets/iconos/logo.svg" alt="logo">
+      </a>
+      <button class="btn btn-sm btn-outline-light lang-btn" id="lang-btn">ES</button>
+      <button class="navbar-toggler border border-success" type="button" data-bs-toggle="collapse"
+        data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon border border-success"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active text-success" aria-current="page" href="#"></a>
+          </li>
+          <li class="nav-item">
+            <a data-lang="es" class="nav-link text-success" href="#aprendizaje">Aprendizaje</a>
+            <a data-lang="en" class="nav-link text-success" href="#aprendizaje">Learning</a>
+          </li>
+          <li class="nav-item">
+            <a data-lang="es" class="nav-link text-success" href="#sobreMi">Sobre Mi</a>
+            <a data-lang="en" class="nav-link text-success" href="#sobreMi">About me</a>
+          </li>
+          <li class="nav-item">
+            <a data-lang="es" class="nav-link text-success" href="#servicios">Servicios</a>
+            <a data-lang="en" class="nav-link text-success" href="#servicios">Services</a>
+          </li>
+          <li class="nav-item">
+            <a data-lang="es" class="nav-link text-success" href="#proyectos">Proyectos</a>
+            <a data-lang="en" class="nav-link text-success" href="#proyectos">Proyect</a>
+          </li>
+          <li class="nav-item">
+            <a data-lang="es" class="nav-link text-success" href="#contactos">Contactos</a>
+            <a data-lang="en" class="nav-link text-success" href="#contactos">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    
+  </nav>
+  <header class="container col-xxl-8 px-4 py-20">
+    <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+      <div class="col-10 col-sm-8 col-lg-6">
+        <img src="./assets/imagenes/img_portfolio.png" class="d-block mx-lg-auto img-fluid" alt="Frontend" width="460"
+          height="460" loading="lazy">
+      </div>
+      <div class="hero col-lg-6">
+        <h1 id="hero-title" class="display-5 fw-bold lh-1 mb-3">
+        </h1>
+        <p data-lang="es" class="lead">
+          Crear y mantener la estructura HTML de los sitios web y aplicaciones.
+          Aplicar estilos<mark>CSS</mark>a los elementos<mark>HTML</mark>para darles apariencia y estilo.
+          Implementar animaciones y transiciones utilizando JavaScript o bibliotecas específicas.
+          Garantizar que los sitios web y aplicaciones sean accesibles y cumplan con las normas de accesibilidad web
+          (WCAG).
+        </p>
+        <p data-lang="en" class="lead">
+          Create and maintain the HTML structure of websites and applications.
+          Apply <mark>CSS</mark>styles to<mark>HTML</mark>elements to give the appearance and style.
+          Implement animations and transitions using JavaScript or specific libraries.
+          Ensure that websites and applications are accessible and comply with web accessibility standards (WCAG)
+        </p>
+        <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+          <h4>
+            <a href="https://github.com/elgran-as"><i class="bi bi-github btn btn-outline-dark"></i></a>
+            <a
+              href="https://www.linkedin.com/in/ariel-salvia-862a45b6?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i
+                class="bi bi-linkedin btn btn-outline-primary"></i></a>
+            <a href="#"><i class="bi bi-instagram btn btn-outline-danger"></i></a>
+            <a href="#"><i class="bi bi-twitter-x btn btn-outline-dark "></i></a>
+            <a href="./assets/cv-ariel-salvia.pdf" target="_blank" class="btn btn-outline-success">
+              <i class="bi bi-download"></i>
+            </a>
+          </h4>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="irArriba">
+    <a class="position-fixed z-1" href="./index.html">
+      <img class="w-50 h-50 d-flex justify-content-center align-items-center" src="./assets/iconos/flecha2.png"
+        alt="ir a arriba">
+    </a>
+  </div>
+  
+  <main class="container-fluid" id="aprendizaje">
+    <h2 class="col-md-12 d-flex justify-content-center text-success bg-dark mt-5 p-5">Aprendizaje</h2>
+    <div class="row">
+        <div class="col-md-6">
+          <div id="miCarrusel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="3000">
+                        <img src="./assets/imagenes/Certificado_1.png" class="d-block w-100" alt="Certificado_1">
+                    </div>
+                    <div class="carousel-item"data-bs-interval="3000" >
+                        <img src="./assets/imagenes/Certificado_2.png" class="d-block w-100" alt="Certificado_2">
+                    </div>
+                    <div class="carousel-item"data-bs-interval="3000" >
+                        <img src="./assets/imagenes/Certificado_3.png" class="d-block w-100" alt="Certificado_3">
+                    </div>
+                    <div class="carousel-item"data-bs-interval="3000" >
+                      <img src="./assets/imagenes/Certificado_4.png" class="d-block w-100" alt="Certificado_4">
+                    </div>
+                    <div class="carousel-item"data-bs-interval="3000" >
+                      <img src="./assets/imagenes/Certificado_5.png" class="d-block w-100" alt="Certificado_4">
+                    </div>
+                    <div class="carousel-item"data-bs-interval="3000" >
+                      <img src="./assets/imagenes/Certificado_6.png" class="d-block w-100" alt="Certificado_4">
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#miCarrusel" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                </a>
+                <a class="carousel-control-next" href="#miCarrusel" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                </a>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="row m-5">
+                <div class="col-4">
+                    <img src="./assets/iconos/dw.svg" class="card m-1" style="width: 4rem ;height: 4rem" alt="DreamWeaver">
+                </div>
+                <div class="col-4">
+                    <img src="./assets/iconos/flash.svg" class="card m-1" style="width: 4rem ;height: 4rem" alt="Flash">
+                </div>
+                <div class="col-4">
+                    <img src="./assets/iconos/fw.svg" class="card m-1" style="width: 4rem ;height: 4rem" alt="Fireworks">
+                </div>
+                <div class="col-4">
+                  <img src="./assets/iconos/visual-studio-code-1.svg" class="card m-1" style="width: 4rem ;height: 4rem" alt="Html">
+              </div>
+                <div class="col-4">
+                    <img src="./assets/iconos/hmtl.svg" class="card m-1" style="width: 4rem ;height: 4rem" alt="Html">
+                </div>
+                <div class="col-4">
+                    <img src="./assets/iconos/css.svg" class="card m-1" style="width: 4rem ;height: 4rem" alt="Css">
+                </div>
+                <div class="col-4">
+                    <img src="./assets/iconos/js.svg" class="card m-1" style="width: 4rem ;height: 4rem" alt="Javascript">
+                </div>
+                <div class="col-4">
+                  <img src="./assets/iconos/bs.svg" class="card m-1" style="width: 4rem ;height: 4rem" alt="Bootstrap">
+              </div>
+              <div class="col-4">
+                <img src="./assets/iconos/nodejs-icon.svg" class="card m-1" style="width: 4rem ;height: 4rem" alt="Bootstrap">
+              </div>
+              <div class="col-4">
+                <img src="./assets/iconos/react-1.svg" class="card m-1" style="width: 4rem ;height: 4rem" alt="Bootstrap">
+              </div>
+              <div class="col-4">
+                <img src="./assets/iconos/expo-1.svg" class="card m-1" style="width: 4rem ;height: 4rem" alt="Bootstrap">
+              </div>
+              <div class="col-4">
+                <img src="./assets/iconos/firebase-1.svg" class="card m-1" style="width: 4rem ;height: 4rem" alt="Bootstrap">
+              </div>
+              <div class="col-4">
+                <img src="./assets/iconos/sqlite.svg" class="card m-1" style="width: 4rem ;height: 4rem" alt="Bootstrap">
+              </div>
+            </div>
+        </div>
+    </div>
+  </main>
+
+  <article class="row d-flex justify-content-center bg-dark container-fluid" id="sobreMi">
+    <h2 class="col-md-12 d-flex justify-content-center text-success bg-dark mt-5">Sobre Mi</h2>
+    <p class="col-md-6 bg-dark text-light p-5 d-flex justify-content-center">Ariel Salvia es un diseñador y
+      desarrollador web que comenzó su carrera utilizando herramientas de diseño gráfico como Dreamweaver. Con el
+      tiempo, se familiarizó con otras tecnologías como Flash y Fireworks. Sin embargo, después de varios años de
+      experiencia, llegó a la conclusión de que necesitaba ampliar sus conocimientos más allá de estas herramientas.
+      <br>
+      Fue entonces cuando comenzó a estudiar lenguajes de programación web como HTML, CSS y JavaScript. Aprendió a
+      crear sitios web desde cero y a darles vida con interacciones y efectos visuales avanzados.
+    </p>
+    <p class="col-md-6 bg-dark text-light p-5 d-flex justify-content-center">
+      Finalmente, descubrió Bootstrap, una popular framework de front-end que le permitió crear diseños responsivos y
+      adaptables a cualquier dispositivo. Gracias a su conocimiento en HTML, CSS, JavaScript y Bootstrap, Salvia ha
+      sido capaz de crear sitios web modernos, atractivos y funcionales para una variedad de clientes y empresas.
+      <br>
+      En resumen, es un profesional del diseño y desarrollo web que ha evolucionado con la industria, adaptándose a
+      las nuevas tecnologías y tendencias. Su enfoque en el aprendizaje continuo y su habilidad para combinar diseño y
+      programación lo han convertido en un desarrollador web completo y valioso en el mercado actual.
+    </p>
+  </article>
+
+  <article class="container px-4 py-5">
+    <h2 class="pb-2 border-bottom" id="servicios">Servicios</h2>
+    <div class="row g-4 py-5 row-cols-1 row-cols-lg-2">
+      <div class="col d-flex align-items-start">
+        <div class="icon-square bg-light text-dark flex-shrink-0 me-3">
+          <svg class="bi" width="1em" height="1em"></svg>
+        </div>
+        <div>
+          <img src="./assets/imagenes/web.jpeg" alt="paginas web" width="336" height="224" loading="lazy">
+          <h2>Desarrollo Web</h2>
+          <p>Visibilidad versátil en todas las plataformas y formatos de búsqueda. Por lo tanto, la pagina se debe
+            adaptar a todos los dispositivos móviles: ordenadores, smartphones y tablets, entre otros aparatos
+            disponibles en el mercado.</p>
+          <a href="#" class="btn btn-success">
+            Html
+          </a>
+          <a href="#" class="btn btn-success">
+            Css
+          </a>
+          <a href="#" class="btn btn-success">
+            JavaScript
+          </a>
+          <a href="#" class="btn btn-success">
+            Bootstrap
+          </a>
+        </div>
+      </div>
+      <div class="col d-flex align-items-start">
+        <div class="icon-square bg-light text-dark flex-shrink-0 me-3">
+          <svg class="bi" width="1em" height="1em"></svg>
+        </div>
+        <div>
+          <img src="./assets/imagenes/web.jpeg" alt="paginas web" width="336" height="224" loading="lazy">
+          <h2>Desarrollo de Aplicaciones</h2>
+          <p>Desarrollado de Apps creando, desarrollando y testeando aplicaciónes con React Native. Programar aplicaciones de alto rendimiento para todas las plataformas.</p>
+          <a href="#" class="btn btn-success">
+            Node Js
+          </a>
+          <a href="#" class="btn btn-success">
+            Expo Cli
+          </a>
+          <a href="#" class="btn btn-success">
+            React Native
+          </a>
+          <a href="#" class="btn btn-success">
+            Firebase
+          </a>
+        </div>
+      </div>
+      <div class="col d-flex align-items-start">
+        <div class="icon-square bg-light text-dark flex-shrink-0 me-3">
+          <svg class="bi" width="1em" height="1em">
+            <use xlink:href="#cpu-fill"></use>
+          </svg>
+        </div>
+        <div>
+          <img src="./assets/imagenes/diseño.jpg" alt="diseño grafico" width="336" height="224" loading="lazy">
+          <h2>Diseño e Ilustracion</h2>
+          <p>· Logotipos e identidades corporativas · Diseño de catálogos, folletos (flyers) y cartelería
+            <br>
+            · Pósters para eventos · Invitaciones de boda y otros eventos · Portadas o carátulas de CD · Infografia ·
+            Señalética.
+          </p>
+          <a href="#" class="btn btn-success">
+            Clip Studio Paint
+          </a>
+          <a href="#" class="btn btn-success">
+            Svg
+          </a>
+        </div>
+      </div>
+      <div class="col d-flex align-items-start">
+        <div class="icon-square bg-light text-dark flex-shrink-0 me-3">
+          <svg class="bi" width="1em" height="1em">
+            <use xlink:href="#tools"></use>
+          </svg>
+        </div>
+        <div>
+          <img src="./assets/imagenes/animacion.jpg" alt="animacion" width="336" height="224" loading="lazy">
+          <h2>Animacion</h2>
+          <p>Escalabilidad y Calidad.
+            <br>
+            Esto es ideal para diseños responsivos.
+            Imagenes personalizadas para web y aplicación moviles.
+            Carga mas rapida y utilizacion de menos recursos.
+          </p>
+          <a href="#" class="btn btn-success">
+            svg
+          </a>
+          <a href="#" class="btn btn-success">
+            Css
+          </a>
+        </div>
+      </div>
+    </div>
+  </article>
+  <section class="row d-flex justify-content-center bg-dark container-fluid" id="proyectos">
+    <h2 class="text-success d-flex justify-content-center m-4">Proyectos</h2>
+
+    <div class="card m-2" style="width: 10rem ;height: 18rem">
+      <img src="./assets/imagenes/pagina1.png" class="card-img align-items-center mt-1 m-1" alt="web Paz Animal">
+      <ul class="row align-items-center">
+        <div class="col-6 d-flex justify-content-center">
+          <a href="https://github.com/elgran-as" target="_blank" rel="noopener noreferrer"><i
+              class="bi bi-github btn btn-outline-dark m-1"></i></a>
+        </div>
+        <div class="col-6 d-flex justify-content-center">
+          <a href="https://paz-animal.netlify.app"><i
+              class="bi bi-pc-display-horizontal btn btn-outline-dark m-1"></i></a>
+        </div>
+      </ul>
+    </div>
+    <div class="card m-2" style="width: 10rem ;height: 18rem">
+      <img src="./assets/imagenes/proyecto1.png" class="card-img align-items-center mt-1 m-1"
+        alt="proyecto con Javascript">
+      <ul class="row">
+        <div class="col-6 d-flex justify-content-center">
+          <a href="https://github.com/elgran-as/paz-animal" target="_blank" rel="noopener noreferrer"><i
+              class="bi bi-github btn btn-outline-dark m-1"></i></a>
+        </div>
+        <div class="col-6 d-flex justify-content-center">
+          <a href="#"><i class="bi bi-pc-display-horizontal btn btn-outline-dark m-1"></i></a>
+        </div>
+      </ul>
+    </div>
+    <div class="card m-2" style="width: 10rem ;height: 18rem">
+      <img src="./assets/imagenes/proyecto2.png" class="card-img align-items-center mt-1 m-1" alt="Bootstrap">
+      <ul class="row">
+        <div class="col-6 d-flex justify-content-center">
+          <a href="https://github.com/elgran-as" target="_blank" rel="noopener noreferrer"><i
+              class="bi bi-github btn btn-outline-dark m-1"></i></a>
+        </div>
+        <div class="col-6 d-flex justify-content-center">
+          <a href="#"><i class="bi bi-pc-display-horizontal btn btn-outline-dark m-1"></i></a>
+        </div>
+      </ul>
+    </div>
+  </section>
+  <p class="placeholder-glow">
+    <span class="placeholder col-12 w-100 h-5 bg-success"></span>
+  </p>
+
+  <section class="container bg-light" id="contactos">
+    <div class="container ">
+      <h4 class="text-form text-success m-4">Hace tu consulta o pedido.</h4>
+      <form class="bg-light row">
+        <label class="text-success" for="nombre">Nombre:</label>
+        <input class="bg-dark text-light rounded border border-success" type="text" id="nombre" name="nombre"
+          placeholder="Ingresa tu nombre" required>
+
+        <label class="text-success" for="telefono">Teléfono:</label>
+        <input class="bg-dark text-light rounded border border-success" type="tel" id="telefono" name="telefono"
+          placeholder="Ingresa tu teléfono" required>
+
+        <label class="text-success" for="email">Correo electrónico:</label>
+        <input class="bg-dark text-light rounded border border-success" type="email" id="email" name="email"
+          placeholder="Ingresa tu correo electrónico" required>
+
+        <label class="text-success" for="comentarios">Comentarios:</label>
+        <textarea class="bg-dark text-light rounded border border-success" id="comentarios" name="comentarios"
+          placeholder="Escribe tus comentarios"></textarea>
+
+        <input class="bg-success text-light mt-1 rounded border border-success" type="submit" value="Enviar">
+      </form>
+    </div>
+  </section>
+  <footer class="row container-fluid">
+    <div class="col-md-12 bg-dark m-2 p-5 d-flex align-items-center">
+      <img class="btn btn-outline-success m-3 " src="./assets/iconos/logo1.svg" alt="logo">
+      <span class="d-flex justify-content-center text-success">copyright®ASDEV<br>by Ariel
+        Salvia
+      </span>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+    integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+    crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script>
+      function downloadFile(url) {
+        var a = document.createElement('a');
+        a.href = url;
+        a.download = 'cv-ariel-salvia.pdf';
+        a.click();
+      }
+    </script>
+    <script>
+      const heroTitle = document.getElementById('hero-title');
+      let titles = ['Professional Frontend Developer', 'Desarrollo de Aplicaciones', 'Ilustracion y Diseño'];
+      let currentTitleIndex = 0;
+    
+      function changeTitle() {
+        heroTitle.classList.add('fadeOut');
+        setTimeout(() => {
+          heroTitle.textContent = titles[currentTitleIndex];
+          heroTitle.classList.remove('fadeOut');
+          heroTitle.classList.add('fadeIn');
+          setTimeout(() => {
+            heroTitle.classList.remove('fadeIn');
+          }, 500);
+        }, 500);
+        currentTitleIndex = (currentTitleIndex + 1) % titles.length;
+      }
+    
+      setInterval(changeTitle, 5000); // Cambia el título cada 3 segundos
+    </script>
+    <script>
+    // Mostrar texto en español por defecto
+    document.querySelectorAll('[data-lang]').forEach((element) => {
+      if (element.getAttribute('data-lang') === 'es') {
+        element.style.display = 'block';
+      } else {
+        element.style.display = 'none';
+      }
+    });
+    
+    // Agrega un evento de clic al botón de cambio de lenguaje
+    const langBtn = document.getElementById('lang-btn');
+    langBtn.addEventListener('click', () => {
+      const currentLang = langBtn.textContent;
+      if (currentLang === 'ES') {
+        langBtn.textContent = 'EN';
+        document.querySelectorAll('[data-lang]').forEach((element) => {
+          if (element.getAttribute('data-lang') === 'en') {
+            element.style.display = 'block';
+          } else {
+            element.style.display = 'none';
+          }
+        });
+      } else {
+        langBtn.textContent = 'ES';
+        document.querySelectorAll('[data-lang]').forEach((element) => {
+          if (element.getAttribute('data-lang') === 'es') {
+            element.style.display = 'block';
+          } else {
+            element.style.display = 'none';
+          }
+        });
+      }
+    });
+  </script>
+</body>
+
+
+</html>
