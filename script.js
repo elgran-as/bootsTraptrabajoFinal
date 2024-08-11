@@ -1,17 +1,19 @@
-function changeTitle() {
-    heroTitle.classList.add('fadeOut');
-    setTimeout(() => {
-      heroTitle.textContent = titles[currentTitleIndex];
-      heroTitle.classList.remove('fadeOut');
-      heroTitle.classList.add('fadeIn');
-      setTimeout(() => {
-        heroTitle.classList.remove('fadeIn');
-      }, 500);
-    }, 500);
-    currentTitleIndex = (currentTitleIndex + 1) % titles.length;
-  }
+const heroTitles = [
+  'Professional Frontend Developer',
+  'Desarrollo de Aplicaciones',
+  'Diseño e Ilustración'
+];
 
-  setInterval(changeTitle, 5000); // Cambia el título cada 3 segundos
+let index = 0;
+const heroTitleElement = document.getElementById('hero-title');
+
+function rotateHeroTitle() {
+  heroTitleElement.textContent = heroTitles[index];
+  index = (index + 1) % heroTitles.length;
+}
+
+setInterval(rotateHeroTitle, 5000); // Cambia el título cada 5 segundos
+rotateHeroTitle(); // Inicializa el título al cargar la página
 
   // Mostrar texto en español por defecto
 document.querySelectorAll('[data-lang]').forEach((element) => {
