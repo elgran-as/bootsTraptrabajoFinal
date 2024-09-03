@@ -20,6 +20,46 @@
   transition: opacity 0.5s;
 }
 
-[data-lang] {
+[data-lang="en"] {
   display: none;
+}
+
+.carousel-infinite-container {
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.carousel-infinite {
+  display: flex;
+  gap: 20px;
+  animation: scroll-infinite 15s linear infinite;
+}
+
+.carousel-icon {
+  width: 70px; /* Ajusta el tamaño del icono */
+  height: 70px;
+  object-fit: contain;
+  margin-bottom: 20px;
+}
+
+@keyframes scroll-infinite {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+bg-dark-custom {
+  background-color: #000;
+  color: #fff;
+}
+.error-message {
+  color: red;
+  font-size: 0.875rem;
+  display: none; /* Ocultar mensaje de error por defecto */
 }

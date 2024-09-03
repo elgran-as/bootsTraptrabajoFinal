@@ -10,6 +10,7 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="./style.css">
   <link rel="icon" type="image/x-icon" href="./assets/iconos/logo.svg">
   <title>PortFolio Ariel Salvia</title>
@@ -81,7 +82,7 @@
           Ensure that websites and applications are accessible and comply with web accessibility standards (WCAG)
         </p>
         <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-          <h4>
+          <div>
             <a href="https://github.com/elgran-as" target="_blank"><i class="bi bi-github btn btn-outline-dark"></i></a>
             <a
               href="https://www.linkedin.com/in/ariel-salvia-dev/" target="_blank"><i
@@ -91,7 +92,7 @@
             <a href="./assets/cv-ariel-salvia.pdf" target="_blank" class="btn btn-outline-success">
               <i class="bi bi-download"></i>
             </a>
-          </h4>
+          </div>
         </div>
       </div>
     </div>
@@ -124,10 +125,10 @@
                       <img src="./assets/imagenes/Certificado_4.png" class="d-block w-100" alt="Certificado_4">
                     </div>
                     <div class="carousel-item"data-bs-interval="3000" >
-                      <img src="./assets/imagenes/Certificado_5.png" class="d-block w-100" alt="Certificado_4">
+                      <img src="./assets/imagenes/Certificado_5.png" class="d-block w-100" alt="Certificado_5">
                     </div>
                     <div class="carousel-item"data-bs-interval="3000" >
-                      <img src="./assets/imagenes/Certificado_6.png" class="d-block w-100" alt="Certificado_4">
+                      <img src="./assets/imagenes/Certificado_6.png" class="d-block w-100" alt="Certificado_6">
                     </div>
                 </div>
                 <a class="carousel-control-prev" href="#miCarrusel" role="button" data-slide="prev">
@@ -183,30 +184,40 @@
         </div>
     </div>
   </main>
-  <article class="row d-flex justify-content-center bg-dark container-fluid" id="sobremi">
-    <h2 data-lang="es" class="pb-2 border-bottom text-success bg-light" id="sobremi">Sobre Mi</h2>
-    <h2 data-lang="en" class="pb-2 border-bottom text-success bg-light" id="aboutme">About Me</h2>
-    <p data-lang="es" class="col-md-6 bg-dark text-light p-5 d-flex justify-content-center">Soy un apasionado del diseño con amplia experiencia en diversas herramientas y lenguajes de programación. Mi trayectoria comenzó con el uso de Dreamweaver, Flash y Fireworks, lo que me permitió crear mi primera página web para un resto-bar (La Curva Resto-Bar). Posteriormente, desarrollé páginas web para Madero Wellness (centro de estética), un catering y Adrián Otero (ex cantante de Memphis la Blusera).
-      <br>
-      En 2023, decidí ampliar mis conocimientos y estudié en UTN e-learning, donde aprendí HTML 5, CSS 3, JavaScript y Bootstrap. Me gradué con sobresaliente y obtuve mi título de Profesional Frontend Developer. Con estos conocimientos, realicé una página web integral para una empresa de productos para Petshop (PAZ ANIMAL).
-    </p>
-    <p data-lang="en" class="col-md-6 bg-dark text-light p-5 d-flex justify-content-center">I am passionate about design with extensive experience in various tools and programming languages. My journey began with Dreamweaver, Flash, and Fireworks, which allowed me to create my first website for a resto-bar. Later, I developed websites for Madero Wellness (aesthetic center), a catering service, and Adrián Otero (former singer of Memphis la Blusera).
-      <br>
-      In 2023, I decided to expand my knowledge and studied at UTN e-learning, where I learned HTML 5, CSS 3, JavaScript, and Bootstrap. I graduated with honors and obtained my Professional Frontend Developer degree. With this knowledge, I created a comprehensive website for a Petshop products company.
-    </p>
-    <p data-lang="es" class="col-md-6 bg-dark text-light p-5 d-flex justify-content-center">
-      En 2024, aprobé un curso de Desarrollo de aplicaciones en CODERHOUSE, donde aprendí React Native, Firebase y Redux Toolkit. Esto me permitió crear un e-commerce para móviles.
-      <br>
-      Actualmente, estoy estudiando Inglés-Elementary en CODERHOUSE para ampliar mis oportunidades de búsqueda laboral.
-      Estoy buscando nuevas oportunidades para aplicar mis habilidades y conocimientos en proyectos desafiantes y emocionantes.
-    </p>
-    <p data-lang="en" class="col-md-6 bg-dark text-light p-5 d-flex justify-content-center">
-      In 2024, I completed a course in Application Development at CODERHOUSE, where I learned React Native, Firebase, and Redux Toolkit. This allowed me to create a mobile e-commerce application.
-      <br>
-      I am currently studying English-Elementary at CODERHOUSE to expand my job search opportunities.
-      I am looking for new opportunities to apply my skills and knowledge to challenging and exciting projects.
-    </p>
-  </article>
+  <article class="container px-4 py-5 text-white bg-dark">
+    <h2 class="pb-2 border-bottom text-success" id="servicios" data-lang="es">Sobre Mi</h2>
+    <h2 class="pb-2 border-bottom text-success" id="services" data-lang="en">About Me</h2>
+    <div class="row g-4 py-5 row-cols-1 row-cols-lg-2">
+        <div class="col d-flex align-items-start">
+            <div>
+                <p data-lang="es">
+                    Soy un apasionado del diseño con amplia experiencia en diversas herramientas y lenguajes de programación. Mi trayectoria comenzó con el uso de Dreamweaver, Flash y Fireworks, lo que me permitió crear mi primera página web para un resto-bar (La Curva Resto-Bar). Posteriormente, desarrollé páginas web para Madero Wellness (centro de estética), un catering y Adrián Otero (ex cantante de Memphis la Blusera).
+                    <br>
+                    En 2023, decidí ampliar mis conocimientos y estudié en UTN e-learning, donde aprendí HTML 5, CSS 3, JavaScript y Bootstrap. Me gradué con sobresaliente y obtuve mi título de Profesional Frontend Developer. Con estos conocimientos, realicé una página web integral para una empresa de productos para Petshop (PAZ ANIMAL).
+                </p>
+                <p data-lang="en">
+                    I am passionate about design with extensive experience in various tools and programming languages. My journey began with Dreamweaver, Flash, and Fireworks, which allowed me to create my first website for a resto-bar. Later, I developed websites for Madero Wellness (aesthetic center), a catering service, and Adrián Otero (former singer of Memphis la Blusera).
+                    <br>
+                    In 2023, I decided to expand my knowledge and studied at UTN e-learning, where I learned HTML 5, CSS 3, JavaScript, and Bootstrap. I graduated with honors and obtained my Professional Frontend Developer degree. With this knowledge, I created a comprehensive website for a Petshop products company.
+                </p>
+            </div>
+        </div>
+        <div class="col d-flex align-items-start">
+            <div>
+                <p data-lang="es">
+                    En 2024, aprobé un curso de Desarrollo de aplicaciones en CODERHOUSE, donde aprendí React Native, Firebase y Redux Toolkit. Esto me permitió crear un e-commerce para móviles.
+                    <br>
+                    Actualmente, estoy estudiando Inglés-Elementary en CODERHOUSE para ampliar mis oportunidades de búsqueda laboral. Estoy buscando nuevas oportunidades para aplicar mis habilidades y conocimientos en proyectos desafiantes y emocionantes.
+                </p>
+                <p data-lang="en">
+                    In 2024, I completed a course in Application Development at CODERHOUSE, where I learned React Native, Firebase, and Redux Toolkit. This allowed me to create a mobile e-commerce application.
+                    <br>
+                    I am currently studying English-Elementary at CODERHOUSE to expand my job search opportunities. I am looking for new opportunities to apply my skills and knowledge to challenging and exciting projects.
+                </p>
+            </div>
+        </div>
+    </div>  
+</article>
   <article class="container px-4 py-5">
     <h2 data-lang="es" class="pb-2 border-bottom text-success" id="servicios">Servicios</h2>
     <h2 data-lang="en" class="pb-2 border-bottom text-success" id="services">Services</h2>
@@ -239,14 +250,14 @@
       </div>
       <div class="col d-flex align-items-start">
         <div class="icon-square bg-light text-dark flex-shrink-0 me-3">
-          <svg class="bi" width="1em" height="1em"></svg>
+          
         </div>
         <div>
           <img src="./assets/imagenes/web.jpeg" alt="paginas web" width="336" height="224" loading="lazy">
           <h2 data-lang="es">Desarrollo de Aplicaciones</h2>
           <h2 data-lang="en">Application Development</h2>
-          <p data-lang="es">Desarrollado de Apps creando, desarrollando y testeando aplicaciónes con React Native. Programar aplicaciones de alto rendimiento para todas las plataformas.</p>
-          <p data-lang="en">Developing apps by creating, developing, and testing applications with React Native. Programming high-performance applications for all platforms.</p>
+          <p data-lang="es">Desarrollado de Apps creando, desarrollando y testeando aplicaciónes con React Native. Programar aplicaciones de alto rendimiento para todas las plataformas. Integrar servicios backend mediante APIs y gestionar estados complejos con Redux Toolkit.</p>
+          <p data-lang="en">Developing apps by creating, developing, and testing applications with React Native. Programming high-performance applications for all platforms.Integrating backend services via APIs and managing complex states with Redux Toolkit. </p>
           <a href="#" class="btn btn-success">
             Node Js
           </a>
@@ -318,23 +329,25 @@
           </a>
         </div>
       </div>
-    </div>  </article>
+    </div>  
+  </article>
+  <div class="carousel-infinite-container">
+    <div class="carousel-infinite">
+      <a href="https://paz-animal.netlify.app" target="_blank" rel="noopener noreferrer">
+        <img src="./assets/imagenes/logo-paz-animal.svg" alt="logo-paz-animal" class="carousel-icon">
+      </a>
+      <a href="https://herreria-osky.netlify.app" target="_blank" rel="noopener noreferrer">
+        <img src="./assets/imagenes/logo herreria osky.png" alt="logo-herreria-osky" class="carousel-icon">
+      </a>
+      <a href="https://jov-muebles.netlify.app" target="_blank" rel="noopener noreferrer">
+        <img src="./assets/imagenes/logo-jov-muebles.png" alt="logo-jov-muebles" class="carousel-icon">
+      </a>
+    </div>
+  </div>
   <section class="row d-flex justify-content-center bg-dark container-fluid" id="proyectos">
     <h2 data-lang="es" class="pb-2 border-bottom text-success" id="proyectos">Proyectos</h2>
     <h2 data-lang="en" class="pb-2 border-bottom text-success" id="proyect">Proyect</h2>
-    <div class="card m-2" style="width: 10rem ;height: 18rem">
-      <img src="./assets/imagenes/pagina1.png" class="card-img align-items-center mt-1 m-1" alt="web Paz Animal">
-      <ul class="row align-items-center">
-        <div class="col-6 d-flex justify-content-center">
-          <a href="https://github.com/elgran-as/paz-animal" target="_blank" rel="noopener noreferrer"><i
-              class="bi bi-github btn btn-outline-dark m-1"></i></a>
-        </div>
-        <div class="col-6 d-flex justify-content-center">
-          <a href="https://paz-animal.netlify.app"><i
-              class="bi bi-pc-display-horizontal btn btn-outline-dark m-1"></i></a>
-        </div>
-      </ul>
-    </div>
+    
     <div class="card m-2" style="width: 10rem ;height: 18rem">
       <img src="./assets/imagenes/proyecto1.png" class="card-img align-items-center mt-1 m-1"
         alt="proyecto con Javascript">
@@ -364,57 +377,58 @@
   <p class="placeholder-glow">
     <span class="placeholder col-12 w-100 h-5 bg-success"></span>
   </p>
-  <section class="container bg-light">
+  <section class="container bg-light py-5">
     <h2 data-lang="es" class="pb-2 border-bottom text-success" id="contactos">Contactos</h2>
     <h2 data-lang="en" class="pb-2 border-bottom text-success" id="contact">Contact</h2>
-    <div class="container" id="contactos">
-      <h4 data-lang="es" class="text-form text-success m-4">Hace tu consulta o pedido.</h4>
-      <h4 data-lang="en" class="text-form text-success m-4">Make your inquiry or order.</h4>
-      <form class="bg-light row">
-        <label data-lang="es" class="text-success" for="nombre">Nombre:</label>
-        <label data-lang="en" class="text-success" for="nombre">Name:</label>
-        <input data-lang="es" class="bg-dark text-light rounded border border-success" type="text" id="nombre" name="nombre"
-          placeholder="Ingresa tu nombre" required>
-          <input data-lang="en" class="bg-dark text-light rounded border border-success" type="text" id="nombre" name="nombre"
-          placeholder="Enter your name" required>
-        <label data-lang="es" class="text-success" for="telefono">Telefono:</label>
-        <label data-lang="en" class="text-success" for="telefono">Phone:</label>
-        <input data-lang="es" class="bg-dark text-light rounded border border-success" type="tel" id="telefono" name="telefono"
-          placeholder="Ingresa tu teléfono" required>
-        <input data-lang="en" class="bg-dark text-light rounded border border-success" type="tel" id="telefono" name="telefono"
-          placeholder="Enter your phone number" required>
-        <label data-lang="es" class="text-success" for="email">Correo electrónico:</label>
-        <label data-lang="en" class="text-success" for="email">Email:</label>
-        <input data-lang="es" class="bg-dark text-light rounded border border-success" type="email" id="email" name="email"
-          placeholder="Ingresa tu correo electrónico" required>
-        <input data-lang="en" class="bg-dark text-light rounded border border-success" type="email" id="email" name="email"
-          placeholder="Enter your email" required>
-        <label data-lang="es" class="text-success" for="comentarios">Comentarios:</label>
-        <label data-lang="en" class="text-success" for="comentarios">Feedback:</label>
-        <textarea data-lang="es" class="bg-dark text-light rounded border border-success" id="comentarios" name="comentarios"
-          placeholder="Escribe tus comentarios"></textarea>
-        <textarea data-lang="en" class="bg-dark text-light rounded border border-success" id="comentarios" name="comentarios"
-          placeholder="Write your comments"></textarea>
-        <input data-lang="es" class="bg-success text-light mt-1 rounded border border-success" type="submit" value="Enviar">
-        <input data-lang="en" class="bg-success text-light mt-1 rounded border border-success" type="submit" value="Send">
-      </form>
+    <div class="container">
+        <h4 data-lang="es" class="text-form text-success m-4">Hace tu consulta o pedido.</h4>
+        <h4 data-lang="en" class="text-form text-success m-4">Make your inquiry or order.</h4>
+        <form id="contact-form" class="bg-dark-custom p-4 rounded border border-success">
+            <div class="mb-3">
+                <label data-lang="es" class="form-label text-success" for="nombre">Nombre:</label>
+                <label data-lang="en" class="form-label text-success" for="nombre">Name:</label>
+                <input data-lang="es" class="form-control bg-dark text-light rounded border border-success" type="text" id="nombre" name="nombre" placeholder="Ingresa tu nombre" required>
+                <input data-lang="en" class="form-control bg-dark text-light rounded border border-success" type="text" id="nombre" name="nombre" placeholder="Enter your name" required>
+                <div id="nombre-error" class="error-message">Nombre es obligatorio.</div>
+            </div>
+            <div class="mb-3">
+                <label data-lang="es" class="form-label text-success" for="telefono">Telefono:</label>
+                <label data-lang="en" class="form-label text-success" for="telefono">Phone:</label>
+                <input data-lang="es" class="form-control bg-dark text-light rounded border border-success" type="tel" id="telefono" name="telefono" placeholder="Ingresa tu teléfono" required>
+                <input data-lang="en" class="form-control bg-dark text-light rounded border border-success" type="tel" id="telefono" name="telefono" placeholder="Enter your phone number" required>
+                <div id="telefono-error" class="error-message">Teléfono es obligatorio.</div>
+            </div>
+            <div class="mb-3">
+                <label data-lang="es" class="form-label text-success" for="email">Correo electrónico:</label>
+                <label data-lang="en" class="form-label text-success" for="email">Email:</label>
+                <input data-lang="es" class="form-control bg-dark text-light rounded border border-success" type="email" id="email" name="email" placeholder="Ingresa tu correo electrónico" required>
+                <input data-lang="en" class="form-control bg-dark text-light rounded border border-success" type="email" id="email" name="email" placeholder="Enter your email" required>
+                <div id="email-error" class="error-message">Formato de correo electrónico incorrecto.</div>
+            </div>
+            <div class="mb-3">
+                <label data-lang="es" class="form-label text-success" for="comentarios">Comentarios:</label>
+                <label data-lang="en" class="form-label text-success" for="comentarios">Feedback:</label>
+                <textarea data-lang="es" class="form-control bg-dark text-light rounded border border-success" id="comentarios" name="comentarios" placeholder="Escribe tus comentarios"></textarea>
+                <textarea data-lang="en" class="form-control bg-dark text-light rounded border border-success" id="comentarios" name="comentarios" placeholder="Write your comments"></textarea>
+            </div>
+            <button data-lang="es" type="submit" class="btn btn-success text-light">Enviar</button>
+            <button data-lang="en" type="submit" class="btn btn-success text-light">Send</button>
+        </form>
     </div>
-  </section>
-  <footer class="row container-fluid">
-    <div class="col-md-12 bg-dark m-2 p-5 d-flex align-items-center">
-      <img class="btn btn-outline-success m-3 " src="./assets/iconos/logo1.svg" alt="logo">
-      <span class="d-flex justify-content-center text-success">copyright®ASDEV<br>by Ariel
-        Salvia
-      </span>
+</section>
+
+<footer class="row container-fluid bg-dark text-light p-4">
+    <div class="col-md-12 d-flex align-items-center justify-content-center">
+        <img class="btn btn-outline-success m-3" src="./assets/iconos/logo1.svg" alt="logo">
+        <span class="text-success">copyright®ASDEV<br>by Ariel Salvia</span>
     </div>
-  </footer>
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
-    integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
-    crossorigin="anonymous"></script>
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script> 
-  <script src="./script.js"></script>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+
+<script src="./script.js"></script>
 </body>
 </html>
