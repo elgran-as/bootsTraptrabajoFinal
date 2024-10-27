@@ -2,7 +2,7 @@
     position: fixed;
     bottom: 50px;
     right: 3%;
-	cursor: pointer;
+	  cursor: pointer;
 	
 	display:flex;
 	justify-content: center;
@@ -23,6 +23,38 @@
 [data-lang="en"] {
   display: none;
 }
+
+.position-relative {
+  position: relative; /* Asegura que el contenedor de palabras esté posicionado correctamente */
+}
+
+.words {
+  position: absolute;
+  top: 0; /* Permite que las palabras ocupen toda la imagen */
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around; /* Distribución más desordenada */
+  align-items: center; /* Alinea verticalmente */
+  pointer-events: none; /* Ignora interacciones */
+}
+
+.words span {
+  margin: 0 10px; /* Aumenta el margen para mayor separación */
+  font-size: 2rem;
+  color: white;
+  opacity: 0; /* Inicialmente ocultas */
+  animation: fadeInOut 8s ease-in-out infinite; /* Animación */
+  transition: opacity 2s ease;
+}
+
+@keyframes fadeInOut {
+  0%, 100% { opacity: 0; }
+  20%, 80% { opacity: 0.2; }
+}
+
 
 .carousel-infinite-container {
   width: 100%;
