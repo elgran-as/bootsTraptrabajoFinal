@@ -114,3 +114,5 @@ document.addEventListener("DOMContentLoaded", function() {
   // Cambiar posiciones cada 4 segundos
   setInterval(moveWords, 4000);
 });
+
+document.getElementById('current-year').textContent = new Date().getFullYear();
