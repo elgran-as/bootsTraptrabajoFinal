@@ -95,3 +95,9 @@ bg-dark-custom {
   font-size: 0.875rem;
   display: none; /* Ocultar mensaje de error por defecto */
 }
+
+img {
+  pointer-events: none; /* Bloquea la interacción con la imagen */
+  -webkit-user-drag: none; /* Desactiva el arrastre en navegadores basados en WebKit */
+  user-drag: none; /* Desactiva el arrastre en navegadores modernos */
+}

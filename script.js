@@ -116,3 +116,22 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 document.getElementById('current-year').textContent = new Date().getFullYear();
+
+// Deshabilitar clic derecho
+document.addEventListener('contextmenu', function (event) {
+  event.preventDefault();
+});
+
+// Deshabilitar teclas comunes para copiar contenido (CTRL+C, CTRL+S, etc.)
+document.addEventListener('keydown', function (event) {
+  if ((event.ctrlKey || event.metaKey) && (event.key === 'c' || event.key === 's' || event.key === 'u')) {
+      event.preventDefault();
+  }
+});
+
+// Deshabilitar el arrastre de imágenes
+document.addEventListener('dragstart', function (event) {
+  if (event.target.tagName === 'IMG') {
+      event.preventDefault();
+  }
+});
